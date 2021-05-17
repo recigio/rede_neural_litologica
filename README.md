@@ -1,2 +1,3 @@
-# rede_neural_litologica
-Criação de Rede Neural para classificacao Litológica
+# Rede Neuroral Para classificação litológica pytorch
+
+Criação de Rede Neural para classificacao Litológica feita em pytorch.
