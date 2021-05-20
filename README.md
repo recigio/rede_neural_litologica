@@ -72,5 +72,36 @@ São 11 categorias possíveis de rochas (FORCE_2020_LITHOFACIES_LITHOLOGY):
 
 * Criados modelos que serão testados mais a fundo com diversas configurações
 * Feitos testes e mapeados resultados
-
 * Por fim, treino-se de novo, com mais epocas e menos learning rate o melhor modelo encontrado
+
+## Resultados dos Treinamentos
+
+       Nome 	Normalizado   Função Custo  Otimizador        Learn R     ep. 	Batch 	Drop 	Resultado Acerto(%)
+       modeloTres 	Sim 	CrossEntropyLoss 	Adam          0.00015 	40 	Sim 	Não 	0.911287
+       modeloTres 	Sim 	CrossEntropyLoss 	RMSprop       0.00015 	40 	Sim 	Não 	0.904969
+       modeloTres 	Sim 	CrossEntropyLoss 	Adam 	       0.00150 	3000 	Não 	Não 	0.901616
+       modeloTres 	Sim 	CrossEntropyLoss 	RMSprop       0.00150 	3000 	Não 	Não 	0.899224
+       modeloTres 	Sim 	CrossEntropyLoss 	SGD 	       0.00015 	40 	Sim 	Não 	0.894760
+       modeloDois 	Sim 	CrossEntropyLoss 	Adam 	       0.00150 	4000 	Não 	Sim 	0.888588
+       modeloDois 	Sim 	CrossEntropyLoss 	Adam 	       0.00015 	40 	Sim 	Sim 	0.884141
+       modeloDois 	Sim 	CrossEntropyLoss 	RMSprop       0.00015 	40 	Sim 	Sim 	0.870988
+       modeloDois 	Sim 	CrossEntropyLoss 	RMSprop       0.00150 	4000 	Não 	Sim 	0.869955
+       modeloDois 	Sim 	CrossEntropyLoss 	SGD 	       0.00015 	40 	Sim 	Sim 	0.865888
+       modeloUm 	Sim 	CrossEntropyLoss 	Adam 	       0.00150 	4000 	Não 	Não 	0.861292
+       modeloUm 	Sim 	CrossEntropyLoss 	Adam 	       0.00015 	40 	Sim 	Não 	0.853983
+       modeloUm 	Sim 	CrossEntropyLoss 	RMSprop       0.00015 	40 	Sim 	Não 	0.850814
+       modeloUm 	Sim 	CrossEntropyLoss 	RMSprop       0.00150 	4000 	Não 	Não 	0.843197
+       modeloUm 	Sim 	CrossEntropyLoss 	SGD 	       0.00015 	40 	Sim 	Não 	0.840301
+       modeloTres 	Sim 	CrossEntropyLoss 	SGD 	       0.00150 	3000 	Não 	Não 	0.753045
+       modeloDois 	Sim 	CrossEntropyLoss 	SGD 	       0.00150 	4000 	Não 	Sim 	0.736159
+       modeloUm 	Sim 	CrossEntropyLoss 	SGD 	       0.00150 	4000 	Não 	Não 	0.731537
+       modeloAnalise Não 	CrossEntropyLoss 	SGD 	       0.05000 	100 	Não 	Não 	0.614123
+       modeloTres 	Sim 	CrossEntropyLoss 	SGD 	       0.00010 	80 	Sim 	Não 	0.000000
+       
+## Conclusão
+
+* A função Adam se mostrou a mais adequada para os modelos construidos
+* Modelos com mais cadamas mostraram melhores resultados
+* Normalizar os dados mostrou-se essencial
+* Um menor learning rate e mais epocas mostrou melhores resultados
+* Mini Batch mostrou-se bastante efetivo
