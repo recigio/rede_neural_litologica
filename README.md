@@ -105,3 +105,9 @@ São 11 categorias possíveis de rochas (FORCE_2020_LITHOFACIES_LITHOLOGY):
 * Normalizar os dados mostrou-se essencial
 * Um menor learning rate e mais epocas mostrou melhores resultados
 * Mini Batch mostrou-se bastante efetivo
+
+## Mais informações
+Relatório: Trabalho Final Relatório.ipynb
+
+## Autor
+Recigio Poffo - recigio@gmail.com
