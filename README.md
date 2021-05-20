@@ -107,7 +107,7 @@ São 11 categorias possíveis de rochas (FORCE_2020_LITHOFACIES_LITHOLOGY):
 * Mini Batch mostrou-se bastante efetivo
 
 ## Mais informações
-Relatório: Trabalho Final Relatório.ipynb
+Relatório: https://github.com/recigio/rede_neural_litologica/blob/main/Trabalho%20Final%20Relat%C3%B3rio.ipynb
 
 ## Autor
 Recigio Poffo - recigio@gmail.com
